@@ -1,34 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ro">
-    <head>
-        <title>MyPets - Home Page</title>
-        
-        <script src="./js/pace.min.js"></script>
-        <link href="./css/pace/big.css" rel="stylesheet" />
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<head>
+		<title>MyPets - Home Page</title>
 		
-        <meta name="author" content="AirDev">
-        <meta name="description" content="">
-        
-        <!-- BOOTSTRAP FRAMEWORK -->
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-        
-        <!-- SKELETON FRAMEWORK -->
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/skeleton.css">
-        
-        <!-- CUSTOM CSS -->
-        <link rel="stylesheet" href="./css/loginPage.css">
-    </head>
-    <body>
-        <div class="background">
-			<div class="active" style="background-image: url('http://upload.wikimedia.org/wikipedia/commons/0/00/Ansamblul_\'Piata_Traian,_centrul_vechi_al_orasului_Braila..jpg')"></div>
-			<div  style="background-image: url('http://andreicismaru.ro/wp-content/uploads/braila-radu2.jpg')"></div>
-			<div  style="background-image: url('http://www.mrcosmin.ro/wp-content/uploads/2012/07/IGP1540-Edit.jpg')"></div>
+		<script src="./js/pace.min.js"></script>
+		<link href="./css/pace/big.css" rel="stylesheet" />
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		
+		<meta name="author" content="AirDev">
+		<meta name="description" content="">
+		
+		<!-- BOOTSTRAP FRAMEWORK -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+		
+		<!-- SKELETON FRAMEWORK -->
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/skeleton.css">
+		
+		<!-- CUSTOM CSS -->
+		<link rel="stylesheet" href="./css/loginPage.css">
+	</head>
+	<body>
+		<div class="background">
+			<div class="active" style="background-image: url('http://freetopwallpaper.com/wp-content/gallery/dog/cute-dogs-wallpaper-hd-pictures-47.jpg')"></div>
+			<div class="active" style="background-image: url('http://www.hdimagewallpaper.com/wp-content/uploads/2015/01/Dog-Cute-26-HD-Screensavers.jpg')"></div>
+			<div class="active" style="background-image: url('http://7-themes.com/data_images/out/77/7037423-funny-cute-dog.jpg')"></div>
+			<div class="active" style="background-image: url('http://nexus-wallpaper.com/wp-content/uploads/2013/06/cute-puppy-dog-eyes.jpg')"></div>
+			<div class="active" style="background-image: url('http://thewallpaperhd.com/wp-content/uploads/2013/02/cute-dog-baby.jpg')"></div>
 		</div>
 		<div id="menu" class="navbar-fixed-top">
 			<div class="container">
@@ -52,7 +54,7 @@
 							<li><a href="#parteneri">Parteneri</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">FaceBook</a></li>
+							<li><img id="facebook-icon" src="http://www.fotor.com/images2/features/collage/facebook_default.png" /></li>
 						</ul>
 					</div>
 				</nav>
@@ -77,13 +79,13 @@
 				<h5 class="eventLocation">MyPets este mai mult decat o echipa, este mai mult decat un proiect.</br></br>MyPets este o noua viziune asupra vietii animalelor de companie, o idee ce aduce in viata acestora divertismentul, mult indragit de oameni.</br></br>Programul implica evenimente menite sa educe atat animalele cat si stapanii acestora.</h5>
 			</div>
 		</div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="http://zeptojs.com/zepto.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-        <script>
-            Pace.on('done', function() {
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://zeptojs.com/zepto.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script>
+			Pace.on('done', function() {
 				//done
-            });
+			});
 			
 			var changeBgTimer = setTimeout(changeBg, 15000), bgId = 0, lastBgId = 0;
 			function changeBg() {
@@ -154,6 +156,6 @@
 					}, timeOut);
 				});
 			});
-        </script>
-    </body>
+		</script>
+	</body>
 </html>
