@@ -15,7 +15,7 @@
 		
 		<!-- BOOTSTRAP FRAMEWORK -->
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
-		<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 		
 		<!-- SKELETON FRAMEWORK -->
 		<link rel="stylesheet" href="./css/normalize.css">
@@ -54,7 +54,7 @@
 							<li><a href="#parteneri">Parteneri</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><img id="facebook-icon" src="http://www.fotor.com/images2/features/collage/facebook_default.png" /></li>
+							<li><img onclick="window.location='http://fb.com'" id="facebook-icon" src="http://www.fotor.com/images2/features/collage/facebook_default.png" /></li>
 						</ul>
 					</div>
 				</nav>
@@ -64,7 +64,6 @@
 			<div class="container">
 				<h1 class="projectName">Connect Braila</h1>
 			</div>
-			
 			<div class="aboutEvent">
 				<h3 class="eventDate">17 Aprilie. Ora 17:00</h3>
 				<h4 class="eventLocation">Stadionul Municipal</h4>
@@ -74,9 +73,18 @@
 			<div class="container">
 				<h1 class="projectName">Despre MyPets</h1>
 			</div>
-			
 			<div class="aboutEvent">
 				<h5 class="eventLocation">MyPets este mai mult decat o echipa, este mai mult decat un proiect.</br></br>MyPets este o noua viziune asupra vietii animalelor de companie, o idee ce aduce in viata acestora divertismentul, mult indragit de oameni.</br></br>Programul implica evenimente menite sa educe atat animalele cat si stapanii acestora.</h5>
+			</div>
+		</div>
+		<div id="locatie" class="pageBody">
+			<div class="container">
+				<h1 class="projectName">Locatia</h1>
+			</div>
+		</div>
+		<div id="parteneri" class="pageBody">
+			<div class="container">
+				<h1 class="projectName">Parteneri</h1>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -117,14 +125,14 @@
 			}
 			
 			function redirect(e){
-				if(this.id!='about')
+				if(this.id!='about' || this.id!='locatie' || this.id!='parteneri')
 				{
 					e.preventDefault();
 					console.log(this.id);
 				}
 			}
-			
-			$(document).ready(function(){
+
+			$(document).ready(function(){						
 				$('#menu').css('max-width', $(window).width());
 				
 				$('body #menu .navbar-toggle').click(function(){
