@@ -127,6 +127,11 @@ body
 	padding-left: 0;
 	font-weight: bold;
 	color: #e3e3e3;
+				text-shadow: 1px 1px 2px #000;
+	-webkit-text-shadow: 1px 1px 2px #000;
+	-moz-text-shadow: 1px 1px 2px #000;
+	-o-text-shadow: 1px 1px 2px #000;
+	-ms-text-shadow: 1px 1px 2px #000;
 }
 
 .navbar-default .navbar-toggle .icon-bar
@@ -167,10 +172,15 @@ body
 
 .projectName
 {
-	display: block;
+
 	text-align: center;
 	margin-top: 21vh;
 	color: #e3e3e3;
+	text-shadow: 1px 1px 2px #000;
+	-webkit-text-shadow: 1px 1px 2px #000;
+	-moz-text-shadow: 1px 1px 2px #000;
+	-o-text-shadow: 1px 1px 2px #000;
+	-ms-text-shadow: 1px 1px 2px #000;
 }
 
 .aboutEvent
@@ -230,11 +240,6 @@ body
 	background: #ffffff;
 }
 
-#parteneri .projectName
-{
-	color:#000;
-}
-
 #locatie
 {
 	left: 200%;
@@ -243,8 +248,13 @@ body
 
 #locatie .harta
 {
-	padding-top: 5%;
-	margin-left: 35%;
+padding-top: 100px;
+		text-shadow: 2px 1px 2px #000;
+	-webkit-text-shadow: 2px 1px 2px #000;
+	-moz-text-shadow: 2px 1px 2px #000;
+	-o-text-shadow: 2px 1px 2px #000;
+	-ms-text-shadow: 2px 1px 2px #000;
+	
 }
 
 @media (max-width: 768px)

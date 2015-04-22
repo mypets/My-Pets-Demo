@@ -15,7 +15,7 @@
 		
 		<!-- BOOTSTRAP FRAMEWORK -->
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 		
 		<!-- SKELETON FRAMEWORK -->
 		<link rel="stylesheet" href="./css/normalize.css">
@@ -47,14 +47,20 @@
 					</div>
 					
 					<div id="navbarCollapse" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#home">Acasa <span class="sr-only">(current)</span></a></li>
+						<ul class="nav navbar-nav" style="
+									text-shadow: 1px 1px 2px #000;
+	-webkit-text-shadow: 1px 1px 2px #000;
+	-moz-text-shadow: 1px 1px 2px #000;
+	-o-text-shadow: 1px 1px 2px #000;
+	-ms-text-shadow: 1px 1px 2px #000;
+						">
+							<li class="active"><a href="#home">Acasă<span class="sr-only">(current)</span></a></li>
 							<li><a href="#about">Despre</a></li>
-							<li><a href="#locatie">Locatie</a></li>
+							<li><a href="#locatie">Locație</a></li>
 							<li><a href="#parteneri">Parteneri</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><img onclick="window.location='http://fb.com'" id="facebook-icon" src="http://www.fotor.com/images2/features/collage/facebook_default.png" /></li>
+							<li><img onclick="window.location='http://www.facebook.com'" id="facebook-icon" src="http://www.fotor.com/images2/features/collage/facebook_default.png" /></li>
 						</ul>
 					</div>
 				</nav>
@@ -62,7 +68,7 @@
 		</div>
 		<div id="home" class="pageBody">
 			<div class="container">
-				<h1 class="projectName">Connect Braila</h1>
+				<h1 class="projectName">Connect Brăila</h1>
 			</div>
 			<div class="aboutEvent">
 				<h3 class="eventDate">17 Aprilie. Ora 17:00</h3>
@@ -74,14 +80,15 @@
 				<h1 class="projectName">Despre MyPets</h1>
 			</div>
 			<div class="aboutEvent">
-				<h5 class="eventLocation">MyPets este mai mult decat o echipa, este mai mult decat un proiect.</br></br>MyPets este o noua viziune asupra vietii animalelor de companie, o idee ce aduce in viata acestora divertismentul, mult indragit de oameni.</br></br>Programul implica evenimente menite sa educe atat animalele cat si stapanii acestora.</h5>
+				<h5 class="eventLocation">MyPets este mai mult decât o echipă, este mai mult decât un proiect.</br></br>MyPets este o nouă viziune asupra vieții animalelor de companie, o idee ce aduce în viața acestora divertismentul, mult îndrăgit de oameni.</br></br>Programul implică evenimente menite să educe atât animalele cât și stăpânii acestora.</h5>
 			</div>
 		</div>
 		<div id="locatie" class="pageBody">
 			<div class="container">
-				<h1 class="projectName">Locatie</h1>
+				<h1 class="projectName">Locație</h1>
 			</div>
 			<div class="harta">
+			<center>
 				<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:400px;width:600px;">
 					<div id="gmap_canvas" style="height:100%;width:100%;"></div>
 					<style>
@@ -93,6 +100,7 @@
 					</style>
 				</div>
 				<script type="text/javascript"> function init_map() { var myOptions = { zoom: 15, center: new google.maps.LatLng(45.25804429999999, 27.94719150000003), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(45.25804429999999, 27.94719150000003) }); infowindow = new google.maps.InfoWindow({ content: "<b>MyPets Connect</b><br/>Stadionul municipal<br/> Braila" }); google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
+			</center>
 			</div>
 		</div>
 		<div id="parteneri" class="pageBody">
@@ -100,19 +108,21 @@
 				<h1 class="projectName">Parteneri</h1>
 			</div>
 			<div class="logoParteneri">
-				<img id="biblioteca" src="img\logo-bjbraila2.png">
-				<img id="primarie" src="img\sigla_braila.png">
+				<img id="biblioteca" src="img\logo-bjbraila2.png" onclick="window.location = 'http://www.bjbraila.ro/bjpi3/'">
+				<img id="primarie" src="img\sigla_braila.png" onclick="window.location = 'http://www.primariabraila.ro:7200/default.aspx'">>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="http://zeptojs.com/zepto.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
 		<script>
+		
+		
 			Pace.on('done', function() {
 				//done
 			});
 			
-			var changeBgTimer = setTimeout(changeBg, 15000), bgId = 0, lastBgId = 0;
+			var changeBgTimer = setTimeout(changeBg, 5000), bgId = 0, lastBgId = 0;
 			function changeBg() {
 				if(bgId >= 0 && bgId < $('.background div').length-1)
 					bgId++;
@@ -128,7 +138,7 @@
 				console.log(bgId + ' / ' + lastBgId);
 				
 				clearTimeout(changeBgTimer);
-				changeBgTimer = setTimeout(changeBg, 15000);
+				changeBgTimer = setTimeout(changeBg, 5000);
 			};
 				
 			divsHidden = document.getElementsByClassName('pageBody');
